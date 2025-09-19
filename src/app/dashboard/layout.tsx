@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import {
   AppWindow,
   Calendar,
-  HeartHand,
+  HeartHandshake,
   Home,
   Languages,
   MessageCircle,
@@ -35,7 +35,7 @@ import { Button } from '@/components/ui/button';
 
 const navItems = [
   { href: '/dashboard', icon: Home, label: 'Home' },
-  { href: '/dashboard/screening', icon: HeartHand, label: 'Screening' },
+  { href: '/dashboard/screening', icon: HeartHandshake, label: 'Screening' },
   {
     href: '/dashboard/chatbot',
     icon: MessageCircle,

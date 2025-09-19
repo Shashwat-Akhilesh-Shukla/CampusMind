@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import {
   Card,
@@ -7,11 +8,11 @@ import {
   CardFooter,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, HeartHand, MessageCircle, Calendar, Users } from 'lucide-react';
+import { ArrowRight, HeartHandshake, MessageCircle, Calendar, Users } from 'lucide-react';
 
 const features = [
   {
-    icon: HeartHand,
+    icon: HeartHandshake,
     title: 'Mental Health Screening',
     description: 'Take a quick, confidential survey (PHQ-9 & GAD-7) to check in with your mental well-being.',
     link: '/dashboard/screening',
