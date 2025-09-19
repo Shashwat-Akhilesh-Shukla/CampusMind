@@ -1,3 +1,29 @@
+
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "support-group-stress",
+      "description": "A group session for stress and anxiety.",
+      "imageUrl": "https://picsum.photos/seed/sg1/600/400",
+      "imageHint": "calm nature"
+    },
+    {
+      "id": "support-group-exams",
+      "description": "Coping with exam pressure.",
+      "imageUrl": "https://picsum.photos/seed/sg2/600/400",
+      "imageHint": "books study"
+    },
+    {
+      "id": "support-group-relationships",
+      "description": "Navigating personal relationships.",
+      "imageUrl": "https://picsum.photos/seed/sg3/600/400",
+      "imageHint": "people talking"
+    },
+    {
+      "id": "support-group-loneliness",
+      "description": "Finding connection and community.",
+      "imageUrl": "https://picsum.photos/seed/sg4/600/400",
+      "imageHint": "friends together"
+    }
+  ]
 }
