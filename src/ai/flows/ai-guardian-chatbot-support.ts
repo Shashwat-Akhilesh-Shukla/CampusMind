@@ -21,9 +21,6 @@ export async function aiGuardianChatbotSupport(input: ChatbotInput): Promise<Cha
 }
 
 const chatbotPrompt = ai.definePrompt({
-  name: 'chatbotPrompt',
-  input: {schema: ChatbotInputSchema},
-  output: {schema: ChatbotOutputSchema},
   prompt: `You are a mental health support chatbot designed to provide students with personalized support, coping strategies, and helpful tips.
 
   Respond to the following user input with empathy and understanding. Offer practical advice and resources when appropriate.
@@ -31,6 +28,8 @@ const chatbotPrompt = ai.definePrompt({
   User Input: {{{userInput}}}
 
   Chatbot Response:`,
+  input: {schema: ChatbotInputSchema},
+  output: {schema: ChatbotOutputSchema},
 });
 
 const aiGuardianChatbotFlow = ai.defineFlow(
@@ -39,8 +38,8 @@ const aiGuardianChatbotFlow = ai.defineFlow(
     inputSchema: ChatbotInputSchema,
     outputSchema: ChatbotOutputSchema,
   },
-  async input => {
-    const {output} = await chatbotPrompt(input);
-    return output!;
+  async (input: ChatbotInput) => {
+    const {output} = await chatbotPrompt.generate(input);
+    return { chatbotResponse: output };
   }
 );

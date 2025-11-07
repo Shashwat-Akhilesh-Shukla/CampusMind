@@ -1,5 +1,5 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/ai-guardian-chatbot-summarization.ts';
-import '@/ai/flows/ai-guardian-chatbot-support.ts';
+import '@/ai/flows/ai-guardian-chatbot-summarization';
+import '@/ai/flows/ai-guardian-chatbot-support';
