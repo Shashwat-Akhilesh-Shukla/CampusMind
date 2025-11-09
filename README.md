@@ -1,5 +1,7 @@
-# Firebase Studio
+## CAMPUSMIND - MULTIMODAL AI THERAPIST FOR REAL TIME CONVOS
 
-This is a NextJS starter in Firebase Studio.
+An AI that feels you in real time - coming soon
 
-To get started, take a look at src/app/page.tsx.
+Chatbot feature completed
+
+Deployed at : https://campus-mind-flax.vercel.app/
